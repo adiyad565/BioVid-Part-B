@@ -1,0 +1,50 @@
+{
+  "full_template_vs_loo": [
+    {
+      "model": "XGBoost",
+      "acc_full_template": 0.66104913363399,
+      "acc_loo": 0.5220745312129124,
+      "acc_loo_169": 0.3604319962022312,
+      "kappa_q_full_template": 0.8501870127177711,
+      "kappa_q_loo": 0.5151675559552651,
+      "kappa_q_loo_169": 0.45133804201367134
+    },
+    {
+      "model": "HGB",
+      "acc_full_template": 0.6624732969380489,
+      "acc_loo": 0.5175646807500593,
+      "acc_loo_169": 0.3509375741751721,
+      "kappa_q_full_template": 0.8494585749317458,
+      "kappa_q_loo": 0.5085716949759213,
+      "kappa_q_loo_169": 0.43067021719906107
+    }
+  ],
+  "similarity_feature_auc": [
+    {
+      "feature": "gsr_sim_corr",
+      "auc_bl1_full_template": 0.6567539102781107,
+      "auc_bl1_loo_template": 0.6163711824266541
+    },
+    {
+      "feature": "ecg_sim_corr",
+      "auc_bl1_full_template": 0.949709483670832,
+      "auc_bl1_loo_template": 0.4975792967283468
+    },
+    {
+      "feature": "emg_trapezius_sim_corr",
+      "auc_bl1_full_template": 0.9444031339001011,
+      "auc_bl1_loo_template": 0.4996401813145518
+    },
+    {
+      "feature": "emg_corrugator_sim_corr",
+      "auc_bl1_full_template": 0.8338913361763978,
+      "auc_bl1_loo_template": 0.37966859421607435
+    },
+    {
+      "feature": "emg_zygomaticus_sim_corr",
+      "auc_bl1_full_template": 0.7893459426007581,
+      "auc_bl1_loo_template": 0.3998349411621931
+    }
+  ],
+  "note": "the full template lets each BL1 trial match itself; leave-one-out removes that, the 169-feature run also removes the PA1 facial copy"
+}

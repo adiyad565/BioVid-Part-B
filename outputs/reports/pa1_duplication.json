@@ -1,0 +1,52 @@
+{
+  "n_trials": 8426,
+  "n_subjects": 86,
+  "per_channel": {
+    "emg_corrugator": {
+      "subjects_set_equal": 72,
+      "subjects_pa1_fully_matched": 75,
+      "subjects_pa1_zero_matched": 0,
+      "min_pa1_match_fraction": 0.75,
+      "pooled_pa1_matched": 1656,
+      "pooled_pa1_total": 1671,
+      "order_aligned_exact_subjects": 72,
+      "comparable_subjects": 74
+    },
+    "emg_zygomaticus": {
+      "subjects_set_equal": 72,
+      "subjects_pa1_fully_matched": 75,
+      "subjects_pa1_zero_matched": 0,
+      "min_pa1_match_fraction": 0.75,
+      "pooled_pa1_matched": 1656,
+      "pooled_pa1_total": 1671,
+      "order_aligned_exact_subjects": 72,
+      "comparable_subjects": 74
+    }
+  },
+  "n_twin_pairs": 1656,
+  "twin_pair_predictions_loo_5class": {
+    "xgb": {
+      "both_correct": 0.4251207729468599,
+      "same_label": 0.08514492753623189,
+      "pa1_prob_higher_for_pa1_twin": 0.9945652173913043
+    },
+    "hgb": {
+      "both_correct": 0.411231884057971,
+      "same_label": 0.08091787439613526,
+      "pa1_prob_higher_for_pa1_twin": 0.9921497584541062
+    }
+  },
+  "source_file_check": {
+    "files": [
+      "071309_w_21-BL1-081",
+      "071309_w_21-PA1-001"
+    ],
+    "byte_identical": {
+      "gsr": false,
+      "ecg": false,
+      "emg_trapezius": false,
+      "emg_corrugator": true,
+      "emg_zygomaticus": true
+    }
+  }
+}
